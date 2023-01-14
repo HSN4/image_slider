@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(9 26 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    gap: 2px;
+}
+.card{
+    width: 60px;
+    height: 500px;
+    overflow: hidden;
+    transition: 1.4s;
+}
+.card img{
+    background-size: cover;
+    transition: 1s;
+    height: 500px;
+    width: 400px;
+}
+.card.active{
+    width: 400px;
+}
+@media (max-width:600px){
+    .card{
+        width: 50px;
+        height: 250px;
+    }
+    .card img{
+        height: 250px;
+        width: 180px;
+    }
+    .card.active{
+        width: 180px;
+    }
+}
